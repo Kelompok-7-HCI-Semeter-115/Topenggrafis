@@ -1,0 +1,39 @@
+{% load static %}
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Topeng Grafis</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href={% static 'css/bootstrap.min.css' %} />
+    <link rel="stylesheet" href={% static 'style.css' %} />
+    <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  </head>
+  <body style="background-color: #202020">
+    <!-- Navigation Bar Starts! -->
+    <section>
+      <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <div class="col-sm-5"></div>
+          <div class="col-sm-2">
+            <div class="text-center">
+                <a class="navbar-brand text-center" href="#">
+                    <button type="button" class="btn btn-dark rounded-pill" id="btnlogo"><img src={% static 'assets/logoputih.png' %} alt="" class="d-inline-block align-text-middle text-center" /></button>
+                </a>
+            </div>
+          </div>
+          <div class="col-sm-5"></div>
+        </div>
+      </nav>
+    </section>
+    <!-- Navigation Bar Ends! -->
+        {% block content %}
+        {% endblock content %}
