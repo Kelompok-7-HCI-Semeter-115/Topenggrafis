@@ -1,5 +1,6 @@
 * {
   font-family: Poppins;
+  overflow-x: hidden;
 }
 
 #tebal {
@@ -92,4 +93,9 @@
   border-radius: 20px;
   max-height: 400px;
   align-items: center;
+}
+
+section{
+  max-width: 100%;
+  overflow-x: hidden;
 }

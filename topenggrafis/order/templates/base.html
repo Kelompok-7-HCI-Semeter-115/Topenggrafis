@@ -20,19 +20,17 @@
   <body style="background-color: #202020">
     <!-- Navigation Bar Starts! -->
     <section>
-      <nav class="navbar navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-          <div class="col-sm-5"></div>
-          <div class="col-sm-2">
+        <div class="row fixed-top bg-#202020 navbar">
+          <div class="col-md-1"></div>
+          <div class="col-md-10 border border-white" style="border-radius: 15px;">
             <div class="text-center">
-                <a class="navbar-brand text-center" href="#">
-                    <button type="button" class="btn btn-dark rounded-pill" id="btnlogo"><img src={% static 'assets/logoputih.png' %} alt="" class="d-inline-block align-text-middle text-center" /></button>
+                <a class="navbar-brand text-center" href="{%url 'home'%}">
+                    <button type="button" class="btn btn-#202020 rounded-pill" id="btnlogo"><img src={% static 'assets/logoputih.png' %} alt="" class="d-inline-block align-text-middle text-center" ></button>
                 </a>
             </div>
           </div>
-          <div class="col-sm-5"></div>
-        </div>
-      </nav>
+          <div class="col-md-1"></div>
+        </div>  
     </section>
     <!-- Navigation Bar Ends! -->
         {% block content %}
