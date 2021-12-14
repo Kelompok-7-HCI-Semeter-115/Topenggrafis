@@ -22,15 +22,19 @@
     <section>
       <nav class="navbar navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-          <div class="col-sm-5"></div>
           <div class="col-sm-2">
+            <a class="navtext" href="{% url 'order' %}" style="float: right">Order Form</a>
+            <a class="navtext" href="{% url 'list' %}" style="float: right">Order List</a>
+            
+          </div>
+          <div class="col-sm-8">
             <div class="text-center">
-                <a class="navbar-brand text-center" href="#">
+                <a class="navbar-brand text-center" href="{% url 'home' %}">
                     <button type="button" class="btn btn-dark rounded-pill" id="btnlogo"><img src={% static 'assets/logoputih.png' %} alt="" class="d-inline-block align-text-middle text-center" /></button>
                 </a>
             </div>
           </div>
-          <div class="col-sm-5"></div>
+          <div class="col-sm-2"></div>
         </div>
       </nav>
     </section>

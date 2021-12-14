@@ -19,3 +19,15 @@ class orderForm(ModelForm):
             'phone_number':forms.TextInput(attrs={'class': 'form-control'}),
             'services':forms.Select(attrs={'class': 'form-control'}),
         }
+
+class searchForm(ModelForm):
+    class Meta:
+        model = Customer
+        fields = [
+            'full_name',
+        ]
+
+        widgets = {
+            'full_name':forms.TextInput(attrs={'placeholder': 'Search by fullname',
+                                                'class' : 'form-control'}),
+        }
