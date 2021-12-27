@@ -1,6 +1,6 @@
 _Website Description_
 
-Kelompok 8:<br />
+Kelompok 7:<br />
 Ahmad Bani Faqih (1313620034)<br />
 Alfitra Fadjri (13136200027)<br />
 Abdullah Dzaki Zein (13136200010)<br />
